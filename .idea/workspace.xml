@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7be060ae-c30a-4723-9050-e7e2f712c0d4" name="更改" comment="新建各个模块，并接入springboot，测试成功">
+    <list default="true" id="7be060ae-c30a-4723-9050-e7e2f712c0d4" name="更改" comment="接入lombok、guava、hutool、fastjason">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/austin-support/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-support/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +123,7 @@
       <updated>1712212118653</updated>
       <workItem from="1712212119718" duration="3034000" />
       <workItem from="1712215188126" duration="326000" />
-      <workItem from="1712215527794" duration="302000" />
+      <workItem from="1712215527794" duration="1785000" />
     </task>
     <task id="LOCAL-00001" summary="新建各个模块，并接入springboot，测试成功">
       <option name="closed" value="true" />
@@ -143,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712214740023</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="接入lombok、guava、hutool、fastjason">
+      <option name="closed" value="true" />
+      <created>1712216069201</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712216069201</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +157,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新建各个模块，并接入springboot，测试成功" />
-    <option name="LAST_COMMIT_MESSAGE" value="新建各个模块，并接入springboot，测试成功" />
+    <MESSAGE value="接入lombok、guava、hutool、fastjason" />
+    <option name="LAST_COMMIT_MESSAGE" value="接入lombok、guava、hutool、fastjason" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
