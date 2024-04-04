@@ -10,6 +10,7 @@ public class TestController {
     @RequestMapping("/test")
     private String test(){
         log.info("----------------------日志启动成功------------------");
+        log.error("----------------------错误测试------------------");
         return "hello,yh";
     }
 }
