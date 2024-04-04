@@ -4,74 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7be060ae-c30a-4723-9050-e7e2f712c0d4" name="更改" comment="引入日志框架logback">
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/constant/AustinConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/constant/CommonConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/constant/OfficialAccountParamConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/constant/SendChanelUrlConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/constant/ThreadPoolConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/domain/AnchorInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/domain/LogParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/domain/RecallTaskInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/domain/SimpleAnchorInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/domain/SimpleTaskInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/domain/TaskInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/account/AlipayMiniProgramAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/account/DingDingRobotAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/account/DingDingWorkNoticeAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/account/EnterpriseWeChatRobotAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/account/FeiShuRobotAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/account/GeTuiAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/account/WeChatMiniProgramAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/account/WeChatOfficialAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/account/YunPianSmsAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/account/sms/LinTongSmsAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/account/sms/SmsAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/account/sms/TencentSmsAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/account/sms/YunPianSmsAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/model/AlipayMiniProgramContentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/model/ContentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/model/DingDingRobotContentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/model/DingDingWorkContentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/model/EmailContentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/model/EnterpriseWeChatContentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/model/EnterpriseWeChatRobotContentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/model/FeiShuRobotContentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/model/ImContentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/model/MiniProgramContentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/model/OfficialAccountsContentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/model/PushContentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/dto/model/SmsContentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/AnchorState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/AuditStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/ChannelType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/DeduplicationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/EnumUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/FileType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/IdType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/MessageStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/MessageType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/PowerfulEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/RespStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/SendMessageType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/ShieldType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/SmsStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/SmsSupplier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/enums/TemplateType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/pipeline/BusinessProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/pipeline/ProcessContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/pipeline/ProcessController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/pipeline/ProcessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/pipeline/ProcessModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/pipeline/ProcessTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-common/src/main/java/common/vo/BasicResultVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/austin-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/austin-web/src/main/java/com/javayh/austin/web/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-web/src/main/java/com/javayh/austin/web/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/austin-web/src/test/java/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-web/src/test/java/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7be060ae-c30a-4723-9050-e7e2f712c0d4" name="更改" comment="添加项目中的common包(包含公共常量、枚举、Bean)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,7 +129,7 @@
       <updated>1712212118653</updated>
       <workItem from="1712212119718" duration="3034000" />
       <workItem from="1712215188126" duration="326000" />
-      <workItem from="1712215527794" duration="5868000" />
+      <workItem from="1712215527794" duration="6206000" />
     </task>
     <task id="LOCAL-00001" summary="新建各个模块，并接入springboot，测试成功">
       <option name="closed" value="true" />
@@ -230,17 +163,37 @@
       <option name="project" value="LOCAL" />
       <updated>1712220719288</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加项目中的common包(包含公共常量、枚举、Bean)">
+      <option name="closed" value="true" />
+      <created>1712234426273</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712234426273</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新建各个模块，并接入springboot，测试成功" />
     <MESSAGE value="接入lombok、guava、hutool、fastjason" />
     <MESSAGE value="引入日志框架logback" />
-    <option name="LAST_COMMIT_MESSAGE" value="引入日志框架logback" />
+    <MESSAGE value="添加项目中的common包(包含公共常量、枚举、Bean)" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加项目中的common包(包含公共常量、枚举、Bean)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,8 +1,8 @@
 package com.javayh.austin.common.pipeline;
 
 
-import com.java3y.austin.common.enums.RespStatusEnum;
-import com.java3y.austin.common.vo.BasicResultVO;
+import com.javayh.austin.common.enums.RespStatusEnum;
+import com.javayh.austin.common.vo.BasicResultVO;
 import lombok.Data;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package com.javayh.austin.common.enums;
 
 
-import com.java3y.austin.common.dto.model.*;
+import com.javayh.austin.common.dto.model.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;

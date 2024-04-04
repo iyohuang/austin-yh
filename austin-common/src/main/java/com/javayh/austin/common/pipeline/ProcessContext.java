@@ -1,6 +1,6 @@
 package com.javayh.austin.common.pipeline;
 
-import com.java3y.austin.common.vo.BasicResultVO;
+import com.javayh.austin.common.vo.BasicResultVO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

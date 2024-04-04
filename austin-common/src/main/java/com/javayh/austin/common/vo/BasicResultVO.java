@@ -1,6 +1,6 @@
 package com.javayh.austin.common.vo;
 
-import com.java3y.austin.common.enums.RespStatusEnum;
+import com.javayh.austin.common.enums.RespStatusEnum;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
