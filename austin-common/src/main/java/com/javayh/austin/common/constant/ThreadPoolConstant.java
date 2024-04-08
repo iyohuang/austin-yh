@@ -4,7 +4,7 @@ package com.javayh.austin.common.constant;
  * 线程池常见的常量信息
  * （仅供初始化的使用，代码里的线程池配置有可能被apollo动态修改)
  *
- * @author 3y
+ * @author yh
  */
 public class ThreadPoolConstant {
     /**

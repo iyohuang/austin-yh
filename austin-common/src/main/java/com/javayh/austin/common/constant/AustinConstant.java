@@ -4,12 +4,12 @@ package com.javayh.austin.common.constant;
 /**
  * Austin常量信息
  *
- * @author 3y
+ * @author yh
  */
 public class AustinConstant {
     /**
      * businessId默认的长度
-     * 生成的逻辑：com.java3y.austin.support.utils.TaskInfoUtils#generateBusinessId(java.lang.Long, java.lang.Integer)
+     * 生成的逻辑：com.javayh.austin.support.utils.TaskInfoUtils#generateBusinessId(java.lang.Long, java.lang.Integer)
      */
     public static final Integer BUSINESS_ID_LENGTH = 16;
     /**
@@ -32,10 +32,10 @@ public class AustinConstant {
      * 消息模板常量；
      * 如果新建模板/账号时，没传入则用该常量
      */
-    public static final String DEFAULT_CREATOR = "Java3y";
-    public static final String DEFAULT_UPDATOR = "Java3y";
-    public static final String DEFAULT_TEAM = "Java3y公众号";
-    public static final String DEFAULT_AUDITOR = "Java3y";
+    public static final String DEFAULT_CREATOR = "Javayh";
+    public static final String DEFAULT_UPDATOR = "Javayh";
+    public static final String DEFAULT_TEAM = "Javayh公众号";
+    public static final String DEFAULT_AUDITOR = "Javayh";
     /**
      * 项目打印常量
      */

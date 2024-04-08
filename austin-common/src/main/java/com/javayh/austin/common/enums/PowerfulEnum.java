@@ -1,7 +1,7 @@
 package com.javayh.austin.common.enums;
 
 /**
- * @author kyw7
+ * @author yh
  * 枚举接口
  */
 interface PowerfulEnum {

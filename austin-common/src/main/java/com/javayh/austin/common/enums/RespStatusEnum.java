@@ -7,8 +7,8 @@ import lombok.ToString;
 /**
  * 全局响应状态枚举
  *
- * @author zzb
- * @since 2021.11.17
+ * @author yh
+ *
  **/
 @Getter
 @ToString

@@ -4,7 +4,123 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7be060ae-c30a-4723-9050-e7e2f712c0d4" name="更改" comment="添加项目中的common包(包含公共常量、枚举、Bean)" />
+    <list default="true" id="7be060ae-c30a-4723-9050-e7e2f712c0d4" name="更改" comment="添加工具包（组件,">
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/config/OkHttpConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/config/SupportThreadPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/config/ThreadPoolExecutorShutdownDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/constans/MessageQueuePipeline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/dao/ChannelAccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/dao/MessageTemplateDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/dao/SmsRecordDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/domain/ChannelAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/domain/MessageTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/domain/SmsRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/dto/GeTuiTokenResultDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/dto/QueryTokenParamDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/mq/SendMqService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/mq/eventbus/EventBusListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/mq/eventbus/EventBusSendMqServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/mq/kafka/KafkaSendMqServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/mq/rabbit/RabbitSendMqServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/mq/rocketmq/RocketMqSendMqServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/mq/springeventbus/AustinSpringEventBusEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/mq/springeventbus/AustinSpringEventSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/mq/springeventbus/SpringEventBusSendMqServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/pending/AbstractLazyPending.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/pending/PendingParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/service/ConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/service/impl/ConfigServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/utils/AccessTokenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/utils/AccountUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/utils/AustinFileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/utils/ConcurrentHashMapUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/utils/ContentHolderUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/utils/LogUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/utils/NacosUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/utils/OkHttpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/utils/RedisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/utils/TaskInfoUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-support/src/main/java/com/javayh/austin/support/utils/ThreadPoolUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-web/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-web/src/main/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-web/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-web/src/main/resources/dynamic-tp-apollo-dtp.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-web/src/main/resources/example.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-web/src/main/resources/limit.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-web/src/main/resources/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/constant/AustinConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/constant/AustinConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/constant/CommonConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/constant/CommonConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/constant/OfficialAccountParamConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/constant/OfficialAccountParamConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/constant/SendChanelUrlConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/constant/SendChanelUrlConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/constant/ThreadPoolConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/constant/ThreadPoolConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/domain/AnchorInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/domain/AnchorInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/domain/LogParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/domain/LogParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/domain/RecallTaskInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/domain/RecallTaskInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/domain/SimpleAnchorInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/domain/SimpleAnchorInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/domain/SimpleTaskInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/domain/SimpleTaskInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/domain/TaskInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/domain/TaskInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/AlipayMiniProgramAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/AlipayMiniProgramAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/DingDingRobotAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/DingDingRobotAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/DingDingWorkNoticeAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/DingDingWorkNoticeAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/EnterpriseWeChatRobotAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/EnterpriseWeChatRobotAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/FeiShuRobotAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/FeiShuRobotAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/GeTuiAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/GeTuiAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/WeChatMiniProgramAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/WeChatMiniProgramAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/WeChatOfficialAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/WeChatOfficialAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/YunPianSmsAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/YunPianSmsAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/sms/SmsAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/sms/SmsAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/sms/TencentSmsAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/sms/TencentSmsAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/sms/YunPianSmsAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/account/sms/YunPianSmsAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/AlipayMiniProgramContentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/AlipayMiniProgramContentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/ContentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/ContentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/DingDingRobotContentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/DingDingRobotContentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/DingDingWorkContentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/DingDingWorkContentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/EmailContentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/EmailContentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/EnterpriseWeChatContentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/EnterpriseWeChatContentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/EnterpriseWeChatRobotContentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/EnterpriseWeChatRobotContentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/FeiShuRobotContentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/FeiShuRobotContentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/ImContentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/ImContentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/MiniProgramContentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/MiniProgramContentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/OfficialAccountsContentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/OfficialAccountsContentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/PushContentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/PushContentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/SmsContentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/dto/model/SmsContentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/AnchorState.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/AnchorState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/AuditStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/AuditStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/ChannelType.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/ChannelType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/DeduplicationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/DeduplicationType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/EnumUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/EnumUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/FileType.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/FileType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/IdType.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/IdType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/MessageStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/MessageStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/MessageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/PowerfulEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/PowerfulEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/RespStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/RespStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/SendMessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/SendMessageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/ShieldType.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/ShieldType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/SmsStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/SmsStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/SmsSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/SmsSupplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/TemplateType.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/enums/TemplateType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/pipeline/BusinessProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/pipeline/BusinessProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/pipeline/ProcessContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/pipeline/ProcessContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/pipeline/ProcessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/pipeline/ProcessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/pipeline/ProcessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/pipeline/ProcessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/pipeline/ProcessModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/pipeline/ProcessModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/pipeline/ProcessTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/pipeline/ProcessTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/vo/BasicResultVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-common/src/main/java/com/javayh/austin/common/vo/BasicResultVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-cron/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-cron/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-handler/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-handler/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-service-api-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-service-api-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-service-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-service-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-stream/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-stream/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-support/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-support/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-support/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-web/src/main/java/com/javayh/austin/AustinApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-web/src/main/java/com/javayh/austin/AustinApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-web/src/test/java/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-web/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +159,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -54,35 +170,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.austin-yh [clean].executor": "Run",
-    "Maven.austin-yh [compile].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.AustinApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/austin-yh/austin-common/src/main/java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.Main.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.austin-yh [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.austin-yh [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AustinApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/austin-yh/austin-web/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.Main.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\austin-yh\austin-common\src\main\java" />
       <recent name="E:\austin-yh\austin-web\src\main\resources" />
+      <recent name="E:\austin-yh\austin-web" />
+      <recent name="E:\austin-yh" />
+      <recent name="E:\austin-yh\logs" />
+      <recent name="E:\austin-yh\austin-support\src\main\java\com\javayh\austin\support" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.AustinApplication">
@@ -129,7 +251,10 @@
       <updated>1712212118653</updated>
       <workItem from="1712212119718" duration="3034000" />
       <workItem from="1712215188126" duration="326000" />
-      <workItem from="1712215527794" duration="6206000" />
+      <workItem from="1712215527794" duration="43402000" />
+      <workItem from="1712423767938" duration="842000" />
+      <workItem from="1712424800997" duration="7623000" />
+      <workItem from="1712481515096" duration="1933000" />
     </task>
     <task id="LOCAL-00001" summary="新建各个模块，并接入springboot，测试成功">
       <option name="closed" value="true" />
@@ -171,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712234426273</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加项目中的common包(包含公共常量、枚举、Bean)2.0">
+      <option name="closed" value="true" />
+      <created>1712234637387</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712234637387</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +326,8 @@
     <MESSAGE value="接入lombok、guava、hutool、fastjason" />
     <MESSAGE value="引入日志框架logback" />
     <MESSAGE value="添加项目中的common包(包含公共常量、枚举、Bean)" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加项目中的common包(包含公共常量、枚举、Bean)" />
+    <MESSAGE value="添加项目中的common包(包含公共常量、枚举、Bean)2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加项目中的common包(包含公共常量、枚举、Bean)2.0" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

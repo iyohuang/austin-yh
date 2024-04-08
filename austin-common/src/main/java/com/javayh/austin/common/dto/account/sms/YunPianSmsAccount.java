@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
  * 账号参数示例：
  * {"url":"https://sms.yunpian.com/v2/sms/tpl_batch_send.json","apikey":"caffff8234234231b5cd7","tpl_id":"523333332","supplierId":20,"supplierName":"云片","scriptName":"YunPianSmsScript"}
  *
- * @author 3y
+ * @author yh
  */
 @Data
 @AllArgsConstructor

@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
  * <p>
  * 参数示例：
  * https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Template_Message_Interface.html
- * * @author zyg
+ * * @author yh
  */
 @Data
 @Builder

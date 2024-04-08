@@ -4,7 +4,7 @@ package com.javayh.austin.common.constant;
 /**
  * 发送渠道的URL常量，统一维护发送地址
  *
- * @author 3y
+ * @author yh
  */
 public class SendChanelUrlConstant {
     /**

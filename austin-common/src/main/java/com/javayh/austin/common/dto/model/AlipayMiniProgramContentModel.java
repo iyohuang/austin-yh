@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import java.util.Map;
 
 /**
- * @author jwq
+ * @author yh
  * 支付宝小程序订阅消息内容
  */
 @Data

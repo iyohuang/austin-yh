@@ -5,8 +5,8 @@ import com.javayh.austin.common.enums.RespStatusEnum;
 import java.util.Objects;
 
 /**
- * @author SamLee
- * @since 2022-03-29
+ * @author yh
+ *
  */
 public class ProcessException extends RuntimeException {
 

@@ -6,10 +6,15 @@
     <parent>
         <groupId>org.example</groupId>
         <artifactId>austin-yh</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>austin-service-api</artifactId>
-
-
+    <dependencies>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>austin-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>

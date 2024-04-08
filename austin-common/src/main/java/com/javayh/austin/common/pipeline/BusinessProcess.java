@@ -3,7 +3,7 @@ package com.javayh.austin.common.pipeline;
 /**
  * 业务执行器
  *
- * @author 3y
+ * @author yh
  */
 public interface BusinessProcess<T extends ProcessModel> {
 

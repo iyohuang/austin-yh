@@ -8,9 +8,9 @@ import lombok.ToString;
 /**
  * 打点信息枚举
  * <p>
- * com.java3y.austin.web.utils.AnchorStateUtils#getDescriptionByState
+ * com.javayh.austin.web.utils.AnchorStateUtils#getDescriptionByState
  *
- * @author 3y
+ * @author yh
  */
 @Getter
 @ToString

@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author jwq
+ * @author yh
  * 支付宝小程序订阅消息账号配置
  */
 @Data

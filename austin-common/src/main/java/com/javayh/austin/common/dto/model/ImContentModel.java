@@ -1,7 +1,7 @@
 package com.javayh.austin.common.dto.model;
 
 /**
- * @author 3y
+ * @author yh
  */
 public class ImContentModel extends ContentModel {
 

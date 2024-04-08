@@ -2,7 +2,7 @@ package com.javayh.austin.common.constant;
 
 
 /**
- * @author 3y
+ * @author yh
  */
 public class CommonConstant {
     public static final String PERIOD = ".";

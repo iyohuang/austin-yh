@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
  * <p>
  * 参数示例：
  * https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/subscribe-message/subscribeMessage.send.html
- * * @author sunql
+ * * @author yh
  */
 @Data
 @Builder

@@ -12,7 +12,7 @@ import java.util.Objects;
 /**
  * 发送渠道类型枚举
  *
- * @author 3y
+ * @author yh
  */
 @Getter
 @ToString
