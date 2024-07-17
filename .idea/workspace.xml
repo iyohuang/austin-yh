@@ -4,21 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7be060ae-c30a-4723-9050-e7e2f712c0d4" name="更改" comment="添加工具包（组件,中间件),整理部分pom文件">
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/mq/SendMqService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-service-api-impl/src/main/java/com/javayh/austin/service/api/impl/action/send/SendAfterCheckAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-service-api-impl/src/main/java/com/javayh/austin/service/api/impl/action/send/SendAssembleAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-service-api-impl/src/main/java/com/javayh/austin/service/api/impl/action/send/SendMqAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-service-api-impl/src/main/java/com/javayh/austin/service/api/impl/action/send/SendPreCheckAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-service-api-impl/src/main/java/com/javayh/austin/service/api/impl/domain/SendTaskModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-service-api/src/main/java/com/javayh/austin/service/api/domain/MessageParam.java" afterDir="false" />
+    <list default="true" id="7be060ae-c30a-4723-9050-e7e2f712c0d4" name="更改" comment="消息推送接口 + 接入层的设计（责任链模式），包括前置检查，参数拼接，后置检查，发送MQ">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/action/DeduplicationAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/action/DiscardAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/action/SendMessageAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/action/ShieldAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/config/HandlerThreadPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/config/TaskPipelineConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/DeduplicationHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/DeduplicationParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/build/AbstractDeduplicationBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/build/Builder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/build/ContentDeduplicationBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/build/FrequencyDeduplicationBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/limit/AbstractLimitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/limit/LimitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/limit/SimpleLimitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/limit/SlideWindowLimitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/service/AbstractDeduplicationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/service/ContentDeduplicationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/service/DeduplicationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/service/FrequencyDeduplicationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/enums/RateLimitStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/flowcontrol/FlowControlFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/flowcontrol/FlowControlParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/flowcontrol/FlowControlService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/flowcontrol/annotations/LocalRateLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/flowcontrol/impl/RequestRateLimitServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/flowcontrol/impl/SendUserNumRateLimitServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/handler/BaseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/handler/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/handler/HandlerHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/handler/impl/EmailHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/pending/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/pending/TaskPendingHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/receiver/kafka/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/receiver/kafka/ReceiverStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/service/ConsumeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/service/impl/ConsumeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/utils/GroupIdMappingUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/austin-handler/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-handler/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/austin-handler/src/main/java/org/example/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/austin-service-api-impl/src/main/java/org/example/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/austin-service-api/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/austin-support/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/austin-support/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-web/src/main/java/com/javayh/austin/web/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-web/src/main/java/com/javayh/austin/web/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-web/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/austin-web/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-web/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/austin-web/src/main/resources/application-test.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +61,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
+        <option value="Enum" />
+        <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,7 +93,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -72,6 +106,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;JUnit.alisenttest.test.executor&quot;: &quot;Run&quot;,
     &quot;Maven.austin-yh [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.austin-yh [compile].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -80,35 +115,43 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.AustinApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/austin-yh/austin-web/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/austin-yh/austin-service-api/src/main/java/com/javayh/austin/service/api/enums&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;全局库&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.AustinApplication.executor&quot;: &quot;Run&quot;,
     &quot;应用程序.Main.executor&quot;: &quot;Run&quot;,
     &quot;应用程序.alisenttest.executor&quot;: &quot;Run&quot;
   }
 }</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\austin-yh\austin-service-api\src\main\java\com\javayh\austin\service\api\enums" />
       <recent name="E:\austin-yh\austin-web\src\main\resources" />
       <recent name="E:\austin-yh\austin-web" />
       <recent name="E:\austin-yh" />
       <recent name="E:\austin-yh\logs" />
-      <recent name="E:\austin-yh\austin-support\src\main\java\com\javayh\austin\support" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.javayh.austin.service.api.enums" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.alisenttest">
+  <component name="RunManager" selected="Spring Boot.AustinApplication">
     <configuration name="AustinApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javayh.austin.AustinApplication" />
       <module name="austin-web" />
@@ -129,6 +172,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="alisenttest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="austin-handler" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="alisenttest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AustinApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="austin-web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.javayh.austin.AustinApplication" />
@@ -138,8 +191,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.alisenttest" />
+        <item itemvalue="JUnit.alisenttest.test" />
         <item itemvalue="应用程序.AustinApplication" />
+        <item itemvalue="应用程序.alisenttest" />
       </list>
     </recent_temporary>
   </component>
@@ -169,6 +223,29 @@
       <workItem from="1713680901931" duration="7270000" />
       <workItem from="1713786828366" duration="1209000" />
       <workItem from="1714056631255" duration="4206000" />
+      <workItem from="1714203873838" duration="6771000" />
+      <workItem from="1714620825559" duration="3973000" />
+      <workItem from="1715390750898" duration="20164000" />
+      <workItem from="1715563294790" duration="14231000" />
+      <workItem from="1715649701393" duration="2180000" />
+      <workItem from="1715671210174" duration="4551000" />
+      <workItem from="1715688416965" duration="8433000" />
+      <workItem from="1715820908704" duration="2998000" />
+      <workItem from="1715907156695" duration="8723000" />
+      <workItem from="1716169660720" duration="9077000" />
+      <workItem from="1716343660234" duration="8000" />
+      <workItem from="1716343724419" duration="4333000" />
+      <workItem from="1716425873814" duration="598000" />
+      <workItem from="1716512396989" duration="599000" />
+      <workItem from="1716857319147" duration="4351000" />
+      <workItem from="1720244463325" duration="7143000" />
+      <workItem from="1720445371189" duration="3928000" />
+      <workItem from="1720486386824" duration="15573000" />
+      <workItem from="1720521905094" duration="1184000" />
+      <workItem from="1720572690025" duration="2473000" />
+      <workItem from="1720679123447" duration="723000" />
+      <workItem from="1720942510308" duration="4318000" />
+      <workItem from="1721177097931" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="新建各个模块，并接入springboot，测试成功">
       <option name="closed" value="true" />
@@ -226,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712560459136</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="消息推送接口 + 接入层的设计（责任链模式），包括前置检查，参数拼接，后置检查，发送MQ">
+      <option name="closed" value="true" />
+      <created>1714207427997</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714207427997</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +335,8 @@
     <MESSAGE value="添加项目中的common包(包含公共常量、枚举、Bean)" />
     <MESSAGE value="添加项目中的common包(包含公共常量、枚举、Bean)2.0" />
     <MESSAGE value="添加工具包（组件,中间件),整理部分pom文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加工具包（组件,中间件),整理部分pom文件" />
+    <MESSAGE value="消息推送接口 + 接入层的设计（责任链模式），包括前置检查，参数拼接，后置检查，发送MQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="消息推送接口 + 接入层的设计（责任链模式），包括前置检查，参数拼接，后置检查，发送MQ" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
