@@ -4,53 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7be060ae-c30a-4723-9050-e7e2f712c0d4" name="更改" comment="消息推送接口 + 接入层的设计（责任链模式），包括前置检查，参数拼接，后置检查，发送MQ">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/action/DeduplicationAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/action/DiscardAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/action/SendMessageAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/action/ShieldAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/config/HandlerThreadPoolConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/config/TaskPipelineConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/DeduplicationHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/DeduplicationParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/build/AbstractDeduplicationBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/build/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/build/ContentDeduplicationBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/build/FrequencyDeduplicationBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/limit/AbstractLimitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/limit/LimitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/limit/SimpleLimitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/limit/SlideWindowLimitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/service/AbstractDeduplicationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/service/ContentDeduplicationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/service/DeduplicationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/deduplication/service/FrequencyDeduplicationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/enums/RateLimitStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/flowcontrol/FlowControlFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/flowcontrol/FlowControlParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/flowcontrol/FlowControlService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/flowcontrol/annotations/LocalRateLimit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/flowcontrol/impl/RequestRateLimitServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/flowcontrol/impl/SendUserNumRateLimitServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/handler/BaseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/handler/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/handler/HandlerHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/handler/impl/EmailHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/pending/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/pending/TaskPendingHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/receiver/kafka/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/receiver/kafka/ReceiverStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/service/ConsumeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/service/impl/ConsumeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/austin-handler/src/main/java/com/javayh/austin/handler/utils/GroupIdMappingUtils.java" afterDir="false" />
+    <list default="true" id="7be060ae-c30a-4723-9050-e7e2f712c0d4" name="更改" comment="丢弃 + 屏蔽 + 去重 + 限流 ，仍有部分未实现，如撤回，以及XXL-JOB相关代码">
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/constants/PendingConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/csv/CountFileRowHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/handler/CronTaskHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/handler/NightShieldLazyPendingHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/pending/CrowdBatchTaskPending.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/service/TaskHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/service/impl/TaskHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/utils/ReadFileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/vo/CrowdInfoVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/xxl/config/XxlJobConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/xxl/constants/XxlJobConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/xxl/entity/XxlJobGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/xxl/entity/XxlJobInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/xxl/enums/ExecutorBlockStrategyEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/xxl/enums/ExecutorRouteStrategyEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/xxl/enums/GlueTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/xxl/enums/MisfireStrategyEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/xxl/enums/ScheduleTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/xxl/service/CronTaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/xxl/service/impl/CronTaskServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/xxl/utils/XxlJobUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/austin-service-api-impl/src/main/java/com/javayh/austin/service/api/impl/service/SendServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/austin-cron/src/main/java/org/example/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/austin-handler/src/main/java/org/example/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/austin-service-api-impl/src/main/java/org/example/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/austin-service-api/src/main/java/org/example/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/austin-web/src/main/java/com/javayh/austin/web/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/austin-web/src/main/java/com/javayh/austin/web/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/austin-web/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/austin-web/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/austin-web/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/austin-web/src/main/resources/application-test.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,6 +228,15 @@
       <workItem from="1720679123447" duration="723000" />
       <workItem from="1720942510308" duration="4318000" />
       <workItem from="1721177097931" duration="623000" />
+      <workItem from="1721220980281" duration="3927000" />
+      <workItem from="1721310028919" duration="2262000" />
+      <workItem from="1721539969086" duration="759000" />
+      <workItem from="1721736896093" duration="6002000" />
+      <workItem from="1721809575691" duration="745000" />
+      <workItem from="1721827542584" duration="3310000" />
+      <workItem from="1721886134269" duration="10395000" />
+      <workItem from="1721912194437" duration="2048000" />
+      <workItem from="1722217284180" duration="1497000" />
     </task>
     <task id="LOCAL-00001" summary="新建各个模块，并接入springboot，测试成功">
       <option name="closed" value="true" />
@@ -311,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714207427997</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="丢弃 + 屏蔽 + 去重 + 限流 ，仍有部分未实现，如撤回，以及XXL-JOB相关代码">
+      <option name="closed" value="true" />
+      <created>1721221628680</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721221628680</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +335,19 @@
     <MESSAGE value="添加项目中的common包(包含公共常量、枚举、Bean)2.0" />
     <MESSAGE value="添加工具包（组件,中间件),整理部分pom文件" />
     <MESSAGE value="消息推送接口 + 接入层的设计（责任链模式），包括前置检查，参数拼接，后置检查，发送MQ" />
-    <option name="LAST_COMMIT_MESSAGE" value="消息推送接口 + 接入层的设计（责任链模式），包括前置检查，参数拼接，后置检查，发送MQ" />
+    <MESSAGE value="丢弃 + 屏蔽 + 去重 + 限流 ，仍有部分未实现，如撤回，以及XXL-JOB相关代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="丢弃 + 屏蔽 + 去重 + 限流 ，仍有部分未实现，如撤回，以及XXL-JOB相关代码" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/austin-cron/src/main/java/com/javayh/austin/cron/config/CronAsyncThreadPoolConfig.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

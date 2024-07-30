@@ -1,4 +1,4 @@
-package com.javayh.austin.handler.service;
+package com.javayh.austin.handler.receiver.service;
 
 import com.javayh.austin.common.domain.TaskInfo;
 import org.springframework.stereotype.Service;

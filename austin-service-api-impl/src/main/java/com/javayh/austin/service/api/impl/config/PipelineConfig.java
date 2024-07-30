@@ -9,6 +9,7 @@ import com.javayh.austin.service.api.impl.action.send.SendAssembleAction;
 import com.javayh.austin.service.api.impl.action.send.SendMqAction;
 import com.javayh.austin.service.api.impl.action.send.SendPreCheckAction;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -45,7 +46,14 @@ public class PipelineConfig {
         processTemplate.setProcessList(Arrays.asList(sendPreCheckAction, sendAssembleAction, sendAfterCheckAction, sendMqAction));
         return processTemplate;
     }
-    
+
+    /**
+     * pipeline流程控制器
+     * 后续扩展则加BusinessCode和ProcessTemplate
+     *
+     * @return
+     */
+    @Bean("apiProcessController")
     public ProcessController apiProcessController(){
         ProcessController processController = new ProcessController();
         Map<String, ProcessTemplate> templateConfig = new HashMap<>(4);
@@ -53,5 +61,6 @@ public class PipelineConfig {
         processController.setTemplateConfig(templateConfig);
         return processController;
     }
+    
     
 }
