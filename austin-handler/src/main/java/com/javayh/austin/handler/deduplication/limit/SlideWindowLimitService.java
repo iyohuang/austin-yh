@@ -17,6 +17,12 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 滑动窗口去重器（内容去重采用基于redis中zset的滑动窗口去重，可以做到严格控制单位时间内的频次。）
+ * 业务逻辑：5分钟内相同用户如果收到相同的内容，则应该被过滤掉
+ * 技术方案：由lua脚本实现
+ * @author yh
+ */
 @Service(value = "SlideWindowLimitService")
 public class SlideWindowLimitService extends AbstractLimitService {
 

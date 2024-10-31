@@ -14,7 +14,6 @@ import com.javayh.austin.common.enums.ChannelType;
 import com.javayh.austin.handler.enums.RateLimitStrategy;
 import com.javayh.austin.handler.flowcontrol.FlowControlParam;
 import com.javayh.austin.handler.handler.BaseHandler;
-import com.javayh.austin.handler.handler.Handler;
 import com.javayh.austin.support.utils.AccountUtils;
 import com.javayh.austin.support.utils.AustinFileUtils;
 import com.sun.mail.util.MailSSLSocketFactory;
@@ -33,7 +32,7 @@ import java.util.List;
  */
 @Component
 @Slf4j
-public class EmailHandler extends BaseHandler implements Handler {
+public class EmailHandler extends BaseHandler{
     @Autowired
     private AccountUtils accountUtils;
 

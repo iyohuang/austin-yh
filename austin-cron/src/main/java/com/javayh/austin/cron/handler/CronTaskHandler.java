@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**
+ * 后台提交的定时任务处理类
  * @author yh
  */
 @Service
